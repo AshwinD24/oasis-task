@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUBEY'S INSTITUTE</title>  
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+     <section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">COURSE</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>SHREE INSTITUTE</h1>
+            <p class="text-box-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa nostrum saepe fugit commodi molestias praesentium, laudantium nam tempore quo provident cupiditate quaerat reprehenderit temporibus cum. Adipisci a omnis laboriosam.</p>
+            <a class="hero-btn" href="">Vist Us to know more</a>
+        </div>
+     </section>
+     <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, possimus repudiandae asperiores consectetur itaque numquam atque veniam dicta impedit expedita illum doloribus quas quibusdam. Autem corporis natus nulla exercitationem quasi.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>MPPSC</h3>
+                <p>Madhya Pradesh Public Service Commission, publicly known as MPPSC is a state government-led agency of Madhya Pradesh state. It was constituted under the state and Union Public Service Commission Article-315, responsible for conducting civil services examinations and competitive examinatio</p>
+            </div>
+            <div class="course-col">
+                <h3>IIT-JEE / NEET</h3>
+                <p>NEET is conducted for admission to medical colleges in India for undergraduate medical courses, while IIT JEE is conducted for admissions to undergraduate courses in engineering colleges. NEET has more weightage for Biology, whereas JEE has more weightage for Maths.</p>
+            </div>
+            <div class="course-col">
+                <h3>CAT</h3>
+                <p>Common Admission Test (CAT) is the entrance exam for aspiring candidates who desire to make a career in management and business administration i.e. MBA. This examination is conducted by the Indian Institutes of Management (IIMs) on a rotational basis.</p>
+            </div>
+        </div>
+     </section>
+     <section class="footer">
+        <h4>About Us</h4>
+        <p class="about">
+          Shree Institute brings out of the latent strengths of every student so that they feel motivated and applauded for their strengths and explore the greater depth of their potential.
+       
+        </p>
+</body>
+</html>
+
+----------------------------css--------------------------------
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient, rgb(107, 228, 89) ;
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    background-image: url(img.webp);
+    background: light;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right; 
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    background-color: wheat;
+    box-shadow: 0 0 20px 0px rgba(7, 6, 6, 0.989);
+    transition: 1.5s;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.text-box{
+    width: 90%;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    columns: rgb(17, 18, 18);
+    color: black;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid wheat;
+    padding: 12px 34px;
+    font-size: 13px;
+    background-color: bisque;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 20px 0px rgba(138, 137, 137, 0.989);
+
+}
+
+.course{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-image: url(course.jpeg);
+}
+h1{
+    font-family: 36px;
+    font-weight: 600;
+}
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 1.5s;
+    box-shadow: 0 0 20px 0px rgba(192, 182, 182, 0.989);
+
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin:10px 0 ;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(155, 27, 27, 0.989);
+}
+@media(max-width:700px) {
+    .row{
+        flex-direction: column;
+    }
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top:20px ;
+    font-weight: 600;
+}
+.about {
+    background-color: rgb(214, 214, 214);
+}
+
+
